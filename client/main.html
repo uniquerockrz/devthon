@@ -1,0 +1,29 @@
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  <title>Devthon -Tinkering starts here</title>
+  <link rel="stylesheet" href="css/foundation.css" />
+  <script src="js/vendor/custom.modernizr.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script src="js/foundation/foundation.topbar.js"></script>
+</head>
+
+<body>
+	{{> navigation }}
+  <div id="container">
+
+		{{renderPage}}
+    
+    <div class="push"></div>
+	</div>
+	{{> footer }}
+  {{> setup}}
+</body>
+
+<template name="home">
+  {{> header }}
+  {{> register }}
+  {{> about }}
+  {{> facilitators }}  
+  {{> samples }}
+  {{> schedule }}
+</template>

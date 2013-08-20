@@ -1,0 +1,94 @@
+<template name="proposals">
+	<div class="row">
+		<div class="large-12 large-centered columns">
+			<h3 class="heading"><d>•</d> Proposals <d>•</d></h3>
+		</div>
+		{{> tracks}}
+	</div>
+</template>
+
+<template name="samples">
+	<div class="row">
+		<div class="large-12 large-centered columns">
+			<h3 class="mainTextStyle">And ideas to tinker and hack on</h3>
+		</div>
+		<div class="samples">
+			<ul class="large-block-grid-3 samples">
+				{{#each hacks}}
+					<li>
+						<a target="_blank" href="{{ link }}" data-action="visit proposal" data-track="{{track}}">
+							<div class="large-12 columns">
+								<h4>{{ title }}</h4>
+							</div>
+							<div class="large-12 columns">
+								<p>{{ description }}</p>
+							</div>
+							
+						</a>
+					</li>
+				{{/each}}
+			</ul>
+		</div>
+	</div>
+</template>
+
+<template name="tracks">
+	{{#each session}}
+		<a target="_blank" href="{{link}}" class="visit-forum" data-action="visit forum" data-track="{{lowercase title}}">
+			<div class="large-4 columns proposal">
+				<div class="large-3 columns">
+		  			<img class="icon" src="/assets/proposals/{{ image }}">
+				</div>
+				<div class="large-9 columns">
+		  			<h4>{{ title }}</h4> 
+		  		</div>
+		  		<div class="large-12 columns">
+					<p>{{ description }}</p>
+		  		</div>
+			</div>
+		</a>
+	{{/each}}
+</template>
+
+<template name="hacks">
+	<div class="row hacks">
+		<div class="large-12 columns back">
+			<h5><a href="/proposals">↩ Tracks</a></h5>
+		</div>
+
+		<a target="_blank" href="https://groups.google.com/forum/#!topic/devthon/cQGykaRZ5Ew">
+	    	
+	    	<div class="large-4 columns proposal">
+	    		<div class="large-12 columns">
+	      			<h4>Modelling traffic jams in major city junctions using Julia</h4> 
+	      		</div>
+	      		<div class="large-12 columns">
+					<p>Based on the Physics Behind Traffic Jams, draft a mathematical model of the same and putting up the test data on Julia? This will assist in determining traffic flow in important junctions during important days.</p>
+	      		</div>
+	    	</div>
+		</a>
+
+		<a target="_blank" href="https://groups.google.com/forum/#!topic/devthon/StPl04VZCBc">
+	    	<div class="large-4 columns proposal">
+	    		<div class="large-12 columns">
+	      			<h4>Deriving the best presentation using R-project and Pecha Kucha Hyderabad videos</h4> 
+	      		</div>
+	      		<div class="large-12 columns">
+					<p>Using the R-project and data points such as words being used, day, season, time of the presentation, views, audience reactions, etc, derive the qualities of the best presentation.</p>
+	      		</div>
+	    	</div>
+		</a>
+
+		<a target="_blank" href="https://groups.google.com/forum/#!topic/devthon/StPl04VZCBc">
+	    	<div class="large-4 columns proposal">
+	    		<div class="large-12 columns">
+	      			<h4>getRTI - a portal for RTI documents with search and other features</h4> 
+	      		</div>
+	      		<div class="large-12 columns">
+					<p>A web portal based on PHP with a backend component of a OCR library 
+						to create an interactive platform to browse RTI data</p>
+	      		</div>
+	    	</div>
+		</a>
+	</div>
+</template>

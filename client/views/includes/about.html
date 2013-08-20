@@ -1,0 +1,63 @@
+<template name="about">
+	<div class="row about">
+		<div class="row">
+		    <div class="large-3 columns">
+		    	<div class="row">
+		    		<div class="large-3 columns">
+		      			<img class="icon" src="/assets/about/propose.svg">
+		    		</div>
+		    		<div class="large-9 columns">
+		      			<h4>Propose</h4>
+		      		</div>
+		    	</div>
+    			<div class="{{permitted}} large-12">
+					<p>Suggest problem statements from your field of interest or find solutions to challenges that 
+					you look forward to. Hack on existing ideas, or tinker around existing solutions</p>
+    			</div>
+		    </div>
+
+		    <div class="large-3 columns">
+		    	<div class="row">
+		    		<div class="large-3 columns">
+		      			<img class="icon" src="/assets/about/connect.svg">
+		    		</div>
+		    		<div class="large-9 columns">
+		      			<h4>Connect</h4>
+		      		</div>
+		    	</div>
+    			<div class="{{permitted}} large-12">
+					<p>Participate or collaborate with those who like your proposal or invite 
+						hackers who you have been looking forward to work with. 
+						Or be part of another hack that interests you.</p>
+		    	</div>
+		    </div>
+
+		    <div class="large-3 columns">
+		    	<div class="row">
+		    		<div class="large-3 columns">
+		      			<img class="icon" src="/assets/about/facilitate.svg">
+		    		</div>
+		    		<div class="large-9 columns">
+		      			<h4>Facilitate</h4>
+		      		</div>
+		    	</div>
+    			<div class="{{permitted}} large-12">
+					<p>Work with hackers or teams to add in your expertise from 
+		          	your fields of interest in solving the problem statement. 
+		          	Contribute to interesting proposals and enable solutions faster!</p>
+		    	</div>
+		    </div>
+
+		    <div class="large-3 small-12 forum columns">
+		      <div class="panel">
+	          	{{> join }}
+    			<div class="{{permitted}} large-12">
+			      	<p>Start new topics, join an  existing discussion, suggest resources related 
+			      		to hacks proposed for Devthon. Most importantly have fun and keep looking out for 
+		          		next editions!</p>
+	          	</div>
+		      </div>
+		    </div>
+		  </div>
+	</div>
+</template>

@@ -1,0 +1,20 @@
+<template name="facilitators">
+	<div class="row rowBottomPaddingProperty">
+		<div class="large-12 large-centered columns">
+			<h3 class="mainTextStyle">We have tinkering experts to assist you in your ideas</h3>
+		</div>
+		<div class="facilitators">
+			<ul class="large-12 columns nameCards">
+				{{#each details}}
+				<li class="large-4 columns noHover cardProperty">
+					<h4>{{ name }}</h4>
+					<div class="photoUnit">
+						<img class="scaledImageProperty img" src=" {{ image }} " style="top:-407px;" alt="Photo: {{ description }}" width="400" height="458">
+					</div>
+					<p class="personTextStyle">{{ description }}</p>
+				</li>
+				{{/each}}
+			</ul>
+		</div>
+	</div>
+</template>

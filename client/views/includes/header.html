@@ -1,0 +1,31 @@
+<template name="header">
+  <!-- Header -->
+  <div class="row header">
+  	<div class="small-6 large-centered columns">
+  		<img class="brand" src="/assets/devthon_logo.png">
+  	</div>
+	<div class="small-4 small-centered columns">
+		<h1>DEVTHON</h1>
+	</div>
+	<div class="small-9 large-centered columns">
+			<h2>Launchpad for innovation and exploration</h2>
+	</div>
+	<div class="large-12 large-centered columns">
+			<h3>Meet curious & tinkering minds and spend a weekend 
+				sparking new ideas, work on existing hacks or explore 
+				what is close to your heart, anything that you love!</h3>
+	</div>
+	{{#if address}}
+	<div class="large-12 large-centered columns">
+	    <h5><a href="http://goo.gl/maps/rxkmZ" target="_blank">
+	    	<img src="/assets/marker.svg" width="16px">
+	    	{{address}}
+	    </a></h5>
+	</div>
+	{{/if}}
+	<div class="large-3 large-centered columns date">
+	    <h4>{{date}}</h4>
+	</div>
+  </div>
+  <!-- End Header -->
+</template>
