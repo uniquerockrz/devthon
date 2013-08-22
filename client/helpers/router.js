@@ -16,6 +16,22 @@ Meteor.Router.add({
 		}
 	},
 
+	'/themachine': {
+		to: 'themachine',
+		and: function() {
+			Session.set("activeLink", Meteor.Router.page());
+			$('html,body').scrollTop(0);
+		}
+	},
+	
+	'/hackers': {
+		to: 'hackers',
+		and: function() {
+			Session.set("activeLink", Meteor.Router.page());
+			$('html,body').scrollTop(0);
+		}
+	},
+	
 	'/editions': {
 		to: 'editions',
 		and: function() {
