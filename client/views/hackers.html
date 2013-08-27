@@ -1,62 +1,48 @@
+
 <template name="hackers">
   <div id="hackers" class="row">
-	<div class="large-8 large-centered columns">
+	<div class="large-12 large-centered columns">
 		<h4>Hacker definition from the <a href="" target="_blank">Hacker Dictionary</a></h4>
 		<p>
 		hacker: [originally, someone who makes furniture with an axe] n. 1. A person who enjoys exploring the details of programmable systems and how to stretch their capabilities, as opposed to most users, who prefer to learn only the minimum necessary. 2. One who programs enthusiastically (even obsessively) or who enjoys programming rather than just theorizing about programming. 3. A person capable of appreciating hack value. 4. A person who is good at programming quickly. 5. An expert at a particular program, or one who frequently does work using it or on it; as in `a UNIX hacker'. (Definitions 1 through 5 are correlated, and people who fit them congregate.) 6. An expert or enthusiast of any kind. One might be an astronomy hacker, for example. 7. One who enjoys the intellectual challenge of creatively overcoming or circumventing limitations. 
 		</p>
 	</div>
 
-	<h4>Hackers at Devthon</h4>
-	
-	
-	<div class="row">
-		<div class="large-4 columns hacker">
-			<div class="large-6 columns">
-				<img src="http://placehold.it/150x150">
-			</div>
-			<div class="large-6 columns">
-					<p>Rakesh Reddy Dubbudu</p> 
-					<li>Chaakri</li>
-					<li>Blah blah</li>
-			</div>
-		</div>
-		
-		<div class="large-4 columns hacker">
-			<div class="large-6 columns">
-				<img src="http://placehold.it/150x150">
-			</div>
-			<div class="large-6 columns">
-					<p>Rakesh Reddy Dubbudu</p> 
-					<li>Chaakri</li>
-					<li>Blah blah</li>
-			</div>
-		</div>
-		
-		<div class="large-4 columns hacker">
-			<div class="large-6 columns">
-				<img src="http://placehold.it/150x150">
-			</div>
-			<div class="large-6 columns">
-					<p>Rakesh Reddy Dubbudu</p> 
-					<li>Chaakri</li>
-					<li>Blah blah</li>
-			</div>
-		</div>
-		
-		<div class="large-4 columns hacker">
-			<div class="large-6 columns">
-				<img src="http://placehold.it/150x150">
-			</div>
-			<div class="large-6 columns">
-					<p>Rakesh Reddy Dubbudu</p> 
-					<li>Chaakri</li>
-					<li>Blah blah</li>
-			</div>
-		</div>
-		
-		
-		
+	<div class="large-12 large-centered columns">
+        <h4>Hackers at Devthon</h4>
 	</div>
+      
+    <div class="row"> 
+        {{#each hackerlist}}
+            {{> hackerbox}}
+        {{/each}}
+    </div>
   </div>
+    
+
+  <div id="firstModal" class="reveal-modal">
+    <h2>This is a modal.</h2>
+    <p>Reveal makes these very easy to summon and dismiss. The close button is simply an anchor with a unicode character icon and a class of <code>close-reveal-modal</code>. Clicking anywhere outside the modal will also dismiss it.</p>
+    <p>Finally, if your modal summons another Reveal modal, the plugin will handle that for you gracefully.</p>
+   
+    <a class="close-reveal-modal">&#215;</a>
+  </div>
+    
+</template>
+
+
+<template name="hackerbox">
+<a href="#" data-reveal-id="firstModal" data-animation="none" class="hackerbox">
+        <div class="large-4 columns hacker">
+			<div class="large-6 columns">
+				<img src="{{image}}">
+			</div>
+			<div class="large-6 columns">
+					<p>{{ name }}</p>
+                    {{#each projects}}
+                        <li>{{this}}</li>
+                    {{/each}}
+			</div>
+		</div>
+</a>
 </template>

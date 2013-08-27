@@ -71,6 +71,15 @@ Template.facilitators.details = function () {
 	];
 }
 
+Template.hackers.hackerlist = function() {
+	return [
+		/*
+        { name: "Kevin Jasti", projects: ["getRTI"], image: "/assets/hackers/Kevin Jasti.jpg" },
+        */
+		
+	];
+}
+
 Template.header.address = function(){
   return "";
 }
