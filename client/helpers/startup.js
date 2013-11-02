@@ -2,6 +2,18 @@ Meteor.startup(function(){
 
 });
 
+Template.testimonials.tweets = function() {
+	return [
+		/* 
+		{ tweet: '“Why you will love Devthon?” and why you&#39;ll be there the next time \
+					<a href="https://t.co/c3XwpEsrCB">https://t.co/c3XwpEsrCB</a>', 
+		  name: 'Chilli', handle: 'imran_parvez', 
+		  link: 'https://twitter.com/imran_parvez/statuses/387149496003485696">October 7, 2013' },
+		*/
+		
+	]
+}
+
 Template.schedule.day1slots = function() {
 	return [
 		/*
