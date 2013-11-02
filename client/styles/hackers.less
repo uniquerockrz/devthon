@@ -1,37 +1,31 @@
-#hacker {
-    color:black !important;
-    a {        
-        &:hover {
-            background: #c0c0c0;
-        }  
-    }
-}
-
-.hacker
-{
-	float: left !important;
+.hacker {
+	float: left!important;
 	padding: 20px;
-    
-    li {
-        font-size: 10pt;
-        line-height: 1.3em;
-        list-style-type: none;
-        &:before {
-            content: "~ "
-        }
-    }
-    
-    p {
-        font-weight: bold;
-        font-size: 11pt;
-        margin-bottom: 6px;
-        line-height: 1;
-    }
+
+	p {
+		font-weight: 700;
+		font-size: 11pt;
+		margin-bottom: 6px;
+		line-height: 1;
+	}
+
+	li {
+		font-size: 10pt;
+		line-height: 1.3em;
+		list-style-type: none;
+	}
 }
 
-.hackerbox {
-    color:black;
-    &:hover{
-        background-color:#c0c0c0;
-    }
+.circular {
+    width:100%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+
+.alignThis {
+	display: table-cell;
+	width: 200px;
+	height: 127px;
+	vertical-align: middle;
 }

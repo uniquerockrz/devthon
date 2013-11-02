@@ -1,0 +1,26 @@
+<template name="testimonials">
+	{{#if tweets}}
+	{{CFA "Be part of the tinkering crowd"}}
+	<div class="row">
+		<div class="large-12 large-centered columns block">
+			<h3 class="mainTextStyle">
+				<span>What the tinkerers say</span>
+			</h3>
+		</div>
+		<div class="testimonials">
+			<div class="large-block-grid-3 samples">
+				{{#each tweets}}
+				<li>
+					<blockquote class="twitter-tweet" data-conversation="none" data-cards="hidden">
+						<p> {{tweet}} </p>
+						&mdash; {{name}} (@{{handle}}) 
+						<a href="{{link}}">{{date}}</a>
+					</blockquote>
+					<div id="testimonial-tweet"></div>
+				</li>
+				{{/each}}
+			</ul>
+		</div>
+	</div>
+	{{/if}}
+</template>

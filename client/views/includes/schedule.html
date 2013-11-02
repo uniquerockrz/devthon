@@ -1,52 +1,61 @@
 <template name="schedule">
 	<div class="row rowBottomPaddingProperty">
-	<div class="large-10 large-centered columns">
+
 		{{#if day1slots}}
-		<div class="large-6 columns">
-			<div class="schedule_grid saturday">
-				{{#if day1}}
-				<h3>{{day1}}</h3>
-				{{/if}}
-				
-				<div class="schedule">
-					<ul>
-						{{#each day1slots}}
-						<li>
-							<span>
-								<h5>{{ time }}</h5>
-								<p>{{activity}}</p>
-							</span>
-							<img src="{{img}}">
-							<div class="clear"></div>
-						</li>
-						{{/each}}
-					</ul>
-				</div>
-			</div>
+		<div class="large-12 large-centered columns block">
+			<h3 class="mainTextStyle">
+				<span>What goes on in 36 hours</span>
+			</h3>
 		</div>
 		{{/if}}
 
-		{{#if day2slots}}
-		<div class="large-6 columns">
-			<div class="schedule_grid sunday">
-				<h3>{{day2}}</h3>
-				<div class="schedule">
-					<ul>
-						{{#each day2slots}}
-						<li>
-							<span>
-								<h5>{{ time }}</h5>
-								<p>{{activity}}</p>
-							</span>
-							<img src="{{img}}">
-							<div class="clear"></div>
-						</li>
-						{{/each}}
-					</ul>
+		<div class="large-10 large-centered columns">
+			{{#if day1slots}}
+			<div class="large-6 columns">
+				<div class="schedule_grid saturday">
+					{{#if day1}}
+					<h3>{{day1}}</h3>
+					{{/if}}
+					
+					<div class="schedule">
+						<ul>
+							{{#each day1slots}}
+							<li>
+								<span>
+									<h5>{{ time }}</h5>
+									<p>{{activity}}</p>
+								</span>
+								<img src="{{img}}">
+								<div class="clear"></div>
+							</li>
+							{{/each}}
+						</ul>
+					</div>
 				</div>
 			</div>
+			{{/if}}
+
+			{{#if day2slots}}
+			<div class="large-6 columns">
+				<div class="schedule_grid sunday">
+					<h3>{{day2}}</h3>
+					<div class="schedule">
+						<ul>
+							{{#each day2slots}}
+							<li>
+								<span>
+									<h5>{{ time }}</h5>
+									<p>{{activity}}</p>
+								</span>
+								<img src="{{img}}">
+								<div class="clear"></div>
+							</li>
+							{{/each}}
+						</ul>
+					</div>
+				</div>
+			</div>
+			{{/if}}
 		</div>
-		{{/if}}
-	</div>
 	</div>
 </template>

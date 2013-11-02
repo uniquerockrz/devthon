@@ -8,20 +8,24 @@
 </template>
 
 <template name="samples">
+	{{#if hacks}}
+	{{CFA "Collaborate or propose a new project"}}
 	<div class="row">
-		<div class="large-12 large-centered columns">
-			<h3 class="mainTextStyle">And ideas to tinker and hack on</h3>
+		<div class="large-12 large-centered columns block">
+			<h3 class="mainTextStyle"><span>Featured hacks and ideas</span></h3>
 		</div>
 		<div class="samples">
 			<ul class="large-block-grid-3 samples">
 				{{#each hacks}}
 					<li>
 						<a target="_blank" href="{{ link }}" data-action="visit proposal" data-track="{{track}}">
-							<div class="large-12 columns">
-								<h4>{{ title }}</h4>
-							</div>
-							<div class="large-12 columns">
-								<p>{{ description }}</p>
+							<div class="hack-card large-12 columns">
+								<div class="large-12 columns">
+									<h4>{{ title }}</h4>
+								</div>
+								<div class="large-12 columns">
+									<p>{{ description }}</p>
+								</div>
 							</div>
 							
 						</a>
@@ -30,6 +34,7 @@
 			</ul>
 		</div>
 	</div>
+	{{/if}}
 </template>
 
 <template name="tracks">

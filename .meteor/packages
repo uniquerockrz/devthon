@@ -7,3 +7,7 @@ preserve-inputs
 less
 router
 handlebars
+
+page-js-ie-support
+HTML5-History-API
+standard-app-packages

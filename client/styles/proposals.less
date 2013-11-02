@@ -1,17 +1,39 @@
+@import "elements.less";
+
 d {
 	font-size: 1.3em;
 }
 
 .samples {
+    h4 {
+    	font-size: 20px;
+        line-height: 1em;
+        font-weight: normal;
+        text-align: center;
+        margin-top: .325em;
+    }
 
 	ul {
 		li {
-			min-height: 13em;
-			padding: 0 5px;
+			.hack-card {
+				min-height: 140px;
+				padding: 10px 0;
 
-			&:hover {
-				cursor: pointer;
-				background-color: #ddd;
+				background-color: #fff;
+				.border-radius(8px, 8px, 8px, 8px);
+				.box-shadow(0 5px 5px #bdc3c7);
+
+				&:hover {
+					cursor: pointer;
+					background-color: #fffff1;
+				}
+
+				p {
+        			text-align: center;
+      				line-height: 1.3em;
+					font-size: 13.5px;
+					margin: 0.525em 0;
+				}
 			}
 		}
 	}

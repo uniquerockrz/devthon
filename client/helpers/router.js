@@ -15,14 +15,6 @@ Meteor.Router.add({
 			$('html,body').scrollTop(0);
 		}
 	},
-
-	'/themachine': {
-		to: 'themachine',
-		and: function() {
-			Session.set("activeLink", Meteor.Router.page());
-			$('html,body').scrollTop(0);
-		}
-	},
 	
 	'/hackers': {
 		to: 'hackers',
