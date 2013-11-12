@@ -18,11 +18,11 @@
 				{{#each hacks}}
 					<li>
 						<a target="_blank" href="{{ link }}" data-action="visit proposal" data-track="{{track}}">
-							<div class="hack-card large-12 columns">
-								<div class="large-12 columns">
+							<div class="hack-card large-12 large-centered small-9 small-centered columns">
+								<div class="large-9 small-9 large-centered small-centered columns">
 									<h4>{{ title }}</h4>
 								</div>
-								<div class="large-12 columns">
+								<div class="large-12 small-12 small-centered large-centered columns">
 									<p>{{ description }}</p>
 								</div>
 							</div>
@@ -33,7 +33,7 @@
 			</ul>
 		</div>
 	</div>
-	{{CFA "Collaborate or propose a new project"}}
+	{{CFA "ordinary" "Collaborate/Propose a hack" "https://groups.google.com/forum/#!forum/devthon"}}
 	{{/if}}
 </template>
 
