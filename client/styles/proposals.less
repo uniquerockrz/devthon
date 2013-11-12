@@ -6,25 +6,24 @@ d {
 
 .samples {
     h4 {
-    	font-size: 20px;
-        line-height: 1em;
+    	font-size: 16px;
+        line-height: 1.2em;
         font-weight: normal;
         text-align: center;
         margin-top: .325em;
+	margin-left: 0.625em;
     }
 
 	ul {
 		li {
 			.hack-card {
 				padding: 10px 0;
-
 				background-color: #fff;
 				.border-radius(8px, 8px, 8px, 8px);
 				.box-shadow(0 5px 5px #bdc3c7);
 
 				&:hover {
-					cursor: pointer;
-					background-color: #fffff1;
+					background-color: #f0f2d4;
 				}
 
 				p {
@@ -32,6 +31,16 @@ d {
       				line-height: 1.3em;
 					font-size: 13.5px;
 					margin: 0.525em 0;
+				}
+
+				&.dodin {
+					background: url('/assets/do-din.png') no-repeat 0 0 #fff;
+					background-size: 29%;
+				}
+
+				&.devthon {
+					background: url('/assets/devthon-badge.svg') no-repeat 3% 10% #fff;
+					background-size: 10%;
 				}
 			}
 		}

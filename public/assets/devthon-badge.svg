@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="200"
+   height="200"
+   viewBox="0 0 200 200"
+   version="1.1"
+   id="svg3217"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="Devthon-fire-Logo__red_.svg"
+   inkscape:export-filename="/home/prashant/Dropbox/devthon/logos_and_badges_fire_logo_online_png/Devthon-fire-Logo__red_1024.png"
+   inkscape:export-xdpi="204.8"
+   inkscape:export-ydpi="204.8">
+  <metadata
+     id="metadata3269">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Logo Branding Guidlines</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="709"
+     id="namedview3267"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.88333333"
+     inkscape:cx="99.452829"
+     inkscape:cy="85.716983"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3217" />
+  <title
+     id="title3219">Logo Branding Guidlines</title>
+  <description
+     id="description3221">Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+  <defs
+     id="defs3223">
+    <rect
+       id="path-1"
+       x="44"
+       y="332"
+       width="350"
+       height="78" />
+  </defs>
+  <g
+     style="fill:none;stroke:none"
+     transform="translate(-73.000001,-1.7478846e-6)"
+     sketch:type="MSLayerGroup"
+     id="Logo">
+    <path
+       style="fill:#d02c27"
+       inkscape:connector-curvature="0"
+       id="path3229"
+       sketch:type="MSShapeGroup"
+       d="m 166.663,0 c 0,0 14.55087,22.651408 -10.64899,49.321304 -25.19987,26.669897 -41.81915,41.251126 -39.00893,67.482316 2.81021,26.23119 18.87549,24.94747 24.38895,27.1835 -17.48677,2.62663 -35.85722,-12.28902 -35.85722,-38.99637 -12.506081,26.7127 -6.45543,43.70225 -2.98611,53.82333 3.46931,10.12108 26.19698,45.10941 74.8929,40.82404 48.69592,-4.28537 69.47922,-34.8483 75.1213,-56.64789 5.64208,-21.79959 -6.21955,-41.31239 -20.44568,-59.097678 -14.22614,-17.785283 -14.36703,-23.14832 -14.36702,-28.683819 0,-5.535498 5.40203,-12.383534 5.40203,-12.383534 -16.2155,14.308403 -18.55787,15.104918 -9.27894,48.640681 6.94354,35.93787 -15.33651,43.70645 -18.64811,45.84975 14.93547,-18.42338 14.93547,-40.829178 -10.78432,-54.589144 5.09511,9.98359 5.10621,12.127799 5.44436,16.542383 -0.66363,7.748641 -5.94246,11.517751 -11.98698,11.517751 -8.70318,0 -15.34517,-6.54309 -12.09096,-18.065266 3.25422,-11.522179 25.36051,-30.5772 25.3605,-56.845842 C 191.16978,9.606869 166.663,0 166.663,0 z m 0,0" />
+  </g>
+</svg>
