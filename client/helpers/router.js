@@ -16,6 +16,14 @@ Meteor.Router.add({
 		}
 	},
 	
+	'/hacks': {
+		to: 'hacks',
+		and: function() {
+			Session.set("activeLink", Meteor.Router.page());
+			$('html,body').scrollTop(0);
+		}
+	},
+	
 	'/hackers': {
 		to: 'hackers',
 		and: function() {

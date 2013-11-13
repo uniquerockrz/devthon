@@ -1,0 +1,37 @@
+<template name="hacks">
+  <div class="row hacks">
+    <ul class="large-block-grid-2">
+      {{#each projects}}
+        <li>
+          <div class="large-12 columns hack">
+            <div class="large-12 columns">
+                <h5>{{title}}</h5> 
+              </div>
+              <div class="large-10 columns">
+                <ul class="resources">
+                  {{#each resources}}
+                    <li class="large-3 resource">
+                      <a href="{{link}}" target="_blank">{{name}}</a>
+                    </li>
+                  {{/each}}
+                </ul>
+              </div>
+              <div class="large-2 columns">
+                {{#constant}}
+                  {{> twitter this }}
+                {{/constant}}
+              </div>
+          </div>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</template>
+
+<template name="twitter">
+  <a href="https://twitter.com/share" 
+     class="twitter-share-button" 
+     data-related="devthon" 
+     data-text="Built at @devthon: {{this.title}} {{getResource this}}"
+     data-count="none"></a>
+</template>
