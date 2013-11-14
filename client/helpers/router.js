@@ -16,7 +16,7 @@ Meteor.Router.add({
 		}
 	},
 	
-	'/hacks': {
+	'/awesome-hacks': {
 		to: 'hacks',
 		and: function() {
 			Session.set("activeLink", Meteor.Router.page());

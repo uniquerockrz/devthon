@@ -2,12 +2,19 @@
 	{{#if tweets}}
 	<div class="row">
 		<div class="large-12 large-centered columns block">
-			<h3 class="mainTextStyle">
+			<h3 class="mainTextStyle noBottomPadding noBottomMargin">
 				<span>What the hackers say</span>
 			</h3>
 		</div>
-		<div class="testimonials large-12 large-centered small-10 small-centered columns">
-			<div class="large-block-grid-3 samples">
+		
+		<div class="large-10 large-centered columns">
+			<div class="pointer">
+				<a href="/hackers">See those who drove their ideas to action</a>
+			</div>
+		</div>
+
+		<div class="large-12 large-centered small-10 small-centered columns">
+			<ul class="large-block-grid-3 samples">
 				{{#each tweets}}
 				<li>
 					<blockquote class="twitter-tweet" data-conversation="none" data-cards="hidden">
@@ -20,7 +27,9 @@
 				{{/each}}
 			</ul>
 		</div>
+
 	</div>
+
 	{{CFA "success" "Be part of the tinkering crowd" "http://facebook.com/groups/devthon"}}
 	{{/if}}
 </template>

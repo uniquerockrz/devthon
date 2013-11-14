@@ -1,14 +1,15 @@
 <template name="header">
   <!-- Header -->
+<header>
   <div class="row header">
   	<div id="logo-container" class="large-6 small-12 small-centered large-centered columns">
-  		<a href="/"><img class="brand" src="/assets/devthon_logo.svg"></a>
+  		<a href="/"><img class="brand" src="/assets/Devthon-fire-Brand__offwhite_.svg"></a>
   	</div>
 	<div class="large-10 small-10 small-centered large-centered columns">
 		<h2 class="noBottomMargin">Innovation space to drive your ideas to action</h2>
 	</div>
 	<div class="large-10 small-10 small-centered large-centered columns">
-		<a href="/hacks" target="_blank">
+		<a href="/awesome-hacks" target="_blank">
 			<div class="awesome-hacks subtext alignMiddle clearTopMargin">
 				<span class="lineBottom">
 					(Check out awesome hacks from previous editions)
@@ -31,12 +32,26 @@
 
 	{{#if address}}
 	<div class="large-12 large-centered columns">
-	    <h5 class="noTopMargin"><a href="{{map}}" target="_blank">
+	    <h5 class="noTopMargin"><a class="lineBottom" href="{{map}}" target="_blank">
 	    	<img src="/assets/marker.svg" width="16px">
 	    	<span class="addressStyle">{{address}}</span>
 	    </a></h5>
 	</div>
 	{{/if}}
+	  <div class="row">
+	    <div class="large-5 small-5 large-centered small-centered columns alignMiddle">
+	      <a target="_blank" href="http://devthonhyd.explara.com" 
+	         class="button alert radius noBottomMargin">
+	         Reserve your ticket
+	       </a>
+	       <span data-tooltip class="has-tip ticket-why tip-top" 
+	          title="Every edition is a limited space that brings in not more than 30 hackers together. We'd like to ensure that the best minds collaborate &amp; stay focussed on utilizing 2 days to spark their ideas.">
+	          [?]
+	       </span>
+	    </div>
+	   </div>
   </div>
+
   <!-- End Header -->
+ </header>
 </template>
