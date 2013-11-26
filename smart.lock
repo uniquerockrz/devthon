@@ -6,7 +6,8 @@
       "foundation": {},
       "scss": {},
       "jquery-masonry": {},
-      "isotope": {}
+      "isotope": {},
+      "headly": {}
     },
     "packages": {
       "router": {
@@ -21,8 +22,8 @@
       },
       "scss": {
         "git": "https://github.com/fourseven/meteor-scss.git",
-        "tag": "v0.6.4.1",
-        "commit": "bf203edb83565943cc0c00a31d536de7094f312b"
+        "tag": "v0.7.0",
+        "commit": "39f60d58c2b890bdd897ef52188644f3093fc2ac"
       },
       "jquery-masonry": {
         "git": "https://github.com/waltyuyu/meteor-jquery-masonry.git",
@@ -33,6 +34,11 @@
         "git": "https://github.com/digioak/meteor-isotope.git",
         "tag": "v0.0.3",
         "commit": "6fa8d0cd5ad50ea2292f2ce03ea619adc6c13c58"
+      },
+      "headly": {
+        "git": "https://github.com/ayal/headly",
+        "tag": "v0.0.514",
+        "commit": "a200e5d37c12ad15fa3d690bb645c5fc9477993d"
       },
       "page-js-ie-support": {
         "git": "https://github.com/tmeasday/meteor-page-js-ie-support.git",

@@ -1,6 +1,7 @@
 @font: "Raleway";
 @social-width: 8.33333% / 2;
 @push: 9.5em;
+@header-color: #eee;
 
 * {
   margin: 0;
@@ -99,6 +100,24 @@ nav li + li:before{
     margin-bottom: 0;
 }
 
+.panel {
+    h5 {
+        font-size: 13px;
+        margin: 0 !important;
+    }
+
+    h6 {
+        font-size: 12px;
+    }
+}
+
+.media {
+    margin-top: 2em !important;
+    font-size: 13.5px;
+    text-align: center;
+    line-height: 2em;
+}
+
 nav {
 
     &.top-bar {
@@ -112,13 +131,17 @@ nav {
 
         .name {
             font-family: "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-            width: 16%;
+            width: 14%;
+        }
+
+        ul {
+            margin-left: 0;
         }
     }
 
     li {
         color: #ffffff;
-        font-size: 14px;
+        font-size: 14px !important;
         text-transform: uppercase;
         padding: 12px 0;
 
@@ -180,7 +203,7 @@ header {
     padding-bottom: 20px;
 
     h1,h2,h3,h4,h5,h6,p,span {
-        color: #fff !important;
+        color: @header-color !important;
     }
 }
 
@@ -188,6 +211,7 @@ header {
 
     .date {
         h4 {
+            color: @header-color;
             font-size: 1.125em;
             text-align: center;
             margin: 0;
@@ -195,7 +219,7 @@ header {
     }
 
     h1 {
-        color: #444444;
+        color: @header-color;
         font-size: 46px;
         text-align: center;
         margin-bottom: 2px;
@@ -206,7 +230,7 @@ header {
     }
 
     h2 {
-        color: #333333;
+        color: @header-color;
         font-size: 30px;
         font-weight: bold;
         letter-spacing: -2px;
@@ -215,13 +239,15 @@ header {
     }
 
     h3 {
+        color: @header-color;
         font-size: 21px;
         font-weight: normal;
         text-align: center;
-	line-height: 1.125em;
+        line-height: 1.125em;
     }
 
     h5 {
+        color: @header-color;
         margin: 10px 0;
         font-weight: normal;
         text-align: center;
@@ -313,12 +339,20 @@ a.press-button {
 }
 
 .about {
-    
-    padding-top: 3em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    background: #fff;
+    border: 1px dotted #ccc;
 
+    .section {
+        margin-bottom: 10px !important;
+    }
+    
     h4 {
+        border-bottom: 1px dotted #ccc;
+        border-top: 1px dotted #ccc;
+        padding: 6px 0;
         font-size: 1.3em;
-        text-transform: uppercase;
         margin-top: 6px;
     }
 

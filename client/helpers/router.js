@@ -8,6 +8,14 @@ Meteor.Router.add({
 		}
 	},
 
+	'/about': {
+		to: 'about',
+		and: function() {
+			Session.set("activeLink", Meteor.Router.page());
+			$('html,body').scrollTop(0);
+		}
+	},
+
 	'/proposals': {
 		to: 'proposals',
 		and: function() {
