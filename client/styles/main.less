@@ -1,7 +1,7 @@
 @font: "Raleway";
 @social-width: 8.33333% / 2;
 @push: 9.5em;
-@header-color: #eee;
+@header-color: #1a1a1a;
 
 * {
   margin: 0;
@@ -213,9 +213,17 @@ header {
     background-size: 100%;
     background-position: center center;
     padding-bottom: 20px;
+    min-height: 22em;
+    position: relative;
+    margin-top: -5px;
 
     h1,h2,h3,h4,h5,h6,p,span {
         color: @header-color !important;
+    }
+
+    .righttext { 
+        position:absolute !important;
+        top: 35%; 
     }
 }
 
@@ -243,7 +251,7 @@ header {
 
     h2 {
         color: @header-color;
-        font-size: 30px;
+        font-size: 26px;
         font-weight: bold;
         letter-spacing: -2px;
         line-height: 1em;

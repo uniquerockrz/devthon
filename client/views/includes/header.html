@@ -1,57 +1,66 @@
 <template name="header">
   <!-- Header -->
-<header>
-  <div class="row header">
-  	<div id="logo-container" class="large-6 small-12 small-centered large-centered columns">
-  		<a href="/"><img class="brand" src="/assets/Devthon-fire-Brand__offwhite_.svg"></a>
-  	</div>
-	<div class="large-10 small-10 small-centered large-centered columns">
-		<h2 class="noBottomMargin">Innovation space to drive your ideas to action</h2>
-	</div>
-	<div class="large-10 small-10 small-centered large-centered columns">
-		<a href="/awesome-hacks" target="_blank">
-			<div class="awesome-hacks subtext alignMiddle clearTopMargin">
-				<span class="lineBottom aHacks">
-					(Check out awesome hacks from previous editions)
-				</span>
-			</div>
-		</a>
-	</div>
+	<header>
 
-	<div class="large-10 small-8 small-centered large-centered columns">
-			<h3 style="display: none;"eclass="noBottomMargin largeTopMargin">
-				Meet curious &amp; tinkering minds and spend a weekend 
-				sparking new ideas, work on existing hacks or explore what is 
-				close to your heart, anything that you love!
-			</h3>
-	</div>
+		<div class="row header">
 
-	<div class="large-4 large-centered columns date largeTopMargin">
-	    <h4>{{date}}</h4>
-	</div>
+		  	<div class="large-6 large-offset-4 small-4 small-offset-6 columns righttext darkbg">
+			  	<!--
+			  	<div id="logo-container" class="large-6 small-12 small-centered large-centered columns">
+			  		<a href="/"><img class="brand" src="/assets/Devthon-fire-Brand__offwhite_.svg"></a>
+			  	</div>
+			  	-->
+				<div class="large-10 small-10 small-centered large-centered columns">
+					<h2 class="noBottomMargin">Innovation space to drive your ideas to action</h2>
+				</div>
+				<div class="large-10 small-10 small-centered large-centered columns">
+					<a href="/awesome-hacks" target="_blank">
+						<div class="awesome-hacks subtext alignMiddle clearTopMargin">
+							<span class="lineBottom aHacks">
+								(Check out awesome hacks from previous editions)
+							</span>
+						</div>
+					</a>
+				</div>
 
-	{{#if address}}
-	<div class="large-12 large-centered columns">
-	    <h5 class="noTopMargin"><a class="lineBottom" href="{{map}}" target="_blank">
-	    	<img src="/assets/marker.svg" width="17px" style="margin-bottom: 4px;">
-	    	<span class="addressStyle">{{address}}</span>
-	    </a></h5>
-	</div>
-	{{/if}}
-	  <div class="row">
-	    <div class="large-5 small-5 large-centered small-centered columns alignMiddle">
-	      <a target="_blank" href="http://dodin.doattend.com" 
-	         class="button alert radius noBottomMargin large-6">
-	         Register 
-	       </a>
-	       <span data-tooltip class="has-tip ticket-why tip-top" 
-	          title="Every edition is a limited space that brings in not more than 30 hackers together. We'd like to ensure that the best minds collaborate &amp; stay focussed on utilizing 2 days to spark their ideas.">
-	          [?]
-	       </span>
-	    </div>
-	   </div>
-  </div>
+				<div class="large-10 small-8 small-centered large-centered columns">
+						<h3 style="display: none;"eclass="noBottomMargin largeTopMargin">
+							Meet curious &amp; tinkering minds and spend a weekend 
+							sparking new ideas, work on existing hacks or explore what is 
+							close to your heart, anything that you love!
+						</h3>
+				</div>
 
-  <!-- End Header -->
- </header>
+				<div class="large-4 large-centered columns date largeTopMargin">
+				    <h4>{{date}}</h4>
+				</div>
+
+				{{#if address}}
+				<div class="large-12 large-centered columns">
+				    <h5 class="noTopMargin"><a class="lineBottom" href="{{map}}" target="_blank">
+				    	<img src="/assets/marker.svg" width="17px" style="margin-bottom: 4px;">
+				    	<span class="addressStyle">{{address}}</span>
+				    </a></h5>
+				</div>
+				{{/if}}
+
+				<div class="row">
+					<div class="large-5 small-5 large-centered small-centered columns alignMiddle">
+					  <a target="_blank" href="http://dodin.doattend.com" 
+					     class="button alert radius noBottomMargin large-6">
+					     Register 
+					   </a>
+					   <span data-tooltip class="has-tip ticket-why tip-top" 
+					      title="Every edition is a limited space that brings in not more than 30 hackers together. We'd like to ensure that the best minds collaborate &amp; stay focussed on utilizing 2 days to spark their ideas.">
+					      [?]
+					   </span>
+					</div>
+				</div>
+
+  			</div>
+
+		</div>
+
+	<!-- End Header -->
+	</header>
 </template>
