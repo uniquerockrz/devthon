@@ -1,4 +1,12 @@
 Meteor.Router.add({
+
+	'/special': {
+		to: 'special',
+		and: function() {
+			Session.set("activeLink", Meteor.Router.page());
+			$('html,body').scrollTop(0);
+		}
+	},
 	
 	'/': {
 		to: 'home',

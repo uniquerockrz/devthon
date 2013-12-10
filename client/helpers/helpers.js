@@ -14,6 +14,10 @@ Handlebars.registerHelper("getResource", function (hack) {
   return hack.resources[0].link;
 });
 
+Handlebars.registerHelper("isSpecial", function() {
+  return Session.equals("activeLink", "special");
+})
+
 Handlebars.registerHelper("activeLink", function (nav) {
   return Session.equals("activeLink", nav.toLocaleLowerCase()) ? "active" : "";
 });

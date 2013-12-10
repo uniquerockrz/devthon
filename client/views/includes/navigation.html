@@ -16,12 +16,12 @@
 		{{#unless activeLink 'home'}}
 			<div class="large-1 columns logo">
 				<a href="/">
-					<img class="masterbrand" src="/assets/logo_mini.png">
+					<img class="masterbrand {{#if isSpecial}}bottom-logo{{/if}}" src="/assets/logo_mini.png">
 				</a>
 			</div>
 		{{/unless}}
 
-		<nav class="top-bar">
+		<nav class="top-bar {{#if isSpecial}}bottom-bar{{/if}}">
 		  <ul class="menu-area">
 		  	<a href="/proposals" class="nav-proposals">
 		  		<li class="large-2 columns name {{activeLink 'proposals'}}">Proposals</li>

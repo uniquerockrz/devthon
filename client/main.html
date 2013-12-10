@@ -8,14 +8,18 @@
 </head>
 
 <body>
-	{{> navigation }}
+  {{#if isSpecial}}
+    {{renderPage}}
+  {{else}}
+  {{> navigation }}
   <div id="container">
 
 		{{renderPage}}
     
     <div class="push"></div>
 	</div>
-	{{> footer }}
+  {{> footer }}
+  {{/if}}
   {{> setup}}
 </body>
 
