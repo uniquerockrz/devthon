@@ -1,8 +1,11 @@
+document.title = "Devthon: Special Edition";
+
 Meteor.Router.add({
 
-	'/special': {
+	'/special-edition': {
 		to: 'special',
 		and: function() {
+			document.title = "Devthon 0.6: Special Edition hack proposals";
 			Session.set("activeLink", Meteor.Router.page());
 			$('html,body').scrollTop(0);
 		}

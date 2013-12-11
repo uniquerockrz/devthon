@@ -10,6 +10,18 @@ Template.twitter.rendered = function() {
    }(document,"script","twitter-wjs");
 }
 
+Template.specialtweet.rendered = function() {
+  return !function(d,s,id) {
+           var js,fjs = d.getElementsByTagName(s)[0];
+           if(!d.getElementById(id)){
+             js=d.createElement(s);
+             js.id=id;
+             js.src="//platform.twitter.com/widgets.js";
+             fjs.parentNode.insertBefore(js,fjs);
+           }
+   }(document,"script","twitter-wjs");
+}
+
 Handlebars.registerHelper("getResource", function (hack) {
   return hack.resources[0].link;
 });

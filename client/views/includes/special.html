@@ -1,15 +1,66 @@
 <template name="special">
+  <div id="special">
+
 	<img class="bg" src="/assets/bg_special.png">
 
-	<div class="row light">
-	  <div class="small-2 large-4 columns">...</div>
-	  <div class="small-4 large-4 columns">...</div>
-	  <div class="small-6 large-4 columns">...</div>
+	<div class="row call-to-action">
+		<div class="large-4 columns">
+			<a href="http://dodin.doattend.com" target="_blank" class="large-12 button alert">
+				Register to participate in the special edition
+			</a>
+		</div>
+		<div class="large-3 columns">
+			<a href="https://www.dropbox.com/s/suloeb1e0mtqw4k/Devthon-special_poster.pdf" 
+			   class="large-12 button" target="_blank">Print a poster for your institution</a>
+		</div>
+		<div class="large-5 columns social-row">
+			<div class="large-7 columns">
+		  		{{#constant}}
+		  			<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.devthon.org%2Fspecial-edition&amp;width&amp;layout=button_count&amp;action=recommend&amp;show_faces=false&amp;share=true&amp;height=21&amp;appId=1382623351962653" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>
+		  		{{/constant}}
+			</div>
+			<div class="large-5 columns">
+		  		{{#constant}}
+		  			{{> specialtweet}}
+		  		{{/constant}}
+			</div>
+		</div>
 	</div>
+
+	<div class="row boxcard">
+	  {{#each proposals}}
+	  	<a target="_blank" href="{{link}}">
+	      <div class="large-6 columns">
+	        <div class="panel">
+
+	          <div class="row cardimage">
+	            <div class="large-12 small-6 columns">
+	            	<img src="/assets/special/{{image}}">
+	            </div>
+	          </div>
+
+	          <div class="row">
+	            <div class="large-12 small-6 columns cardtext">
+	              <span class="title"><strong> {{title}} </strong></span>
+	              <hr>
+					{{description}}
+	            </div>
+	          </div>
+	        </div>
+	      </div><!-- End Managed By -->
+	  	</a>
+	   {{/each}}
+    </div>
 
 	<div class="large-1 columns logo">
 		<a href="/">
 			<img class="masterbrand {{#if isSpecial}}bottom-right-logo{{/if}}" src="/assets/Devthon-fire-Logo__white_.svg" width="40px">
 		</a>
 	</div>
+
+  </div>
+</template>
+
+<template name="specialtweet">
+	<a href="https://twitter.com/intent/tweet?button_hashtag=devthonspecial&text=Spend%20this%20weekend%20hacking%20solutions.%20Check%20out%20the%20urban%20challenges%20from%20the%20special%20edition.." class="twitter-hashtag-button" data-related="devthon" data-url="http://www.devthon.org/special-edition">Tweet #devthonspecial</a>
 </template>
